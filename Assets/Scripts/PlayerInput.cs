@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private IMovable _playerMover = default;
+    private PlayerMover _playerMover = default;
     private PlayerAnimator _playerAnimator = default;
     private float _horizontalMove = default;
 
@@ -19,6 +19,8 @@ public class PlayerInput : MonoBehaviour
     {
         _horizontalMove = Input.GetAxis("Horizontal");
 
+        _playerAnimator.SetSpeed(_horizontalMove);
+        
         if (Mathf.Abs(_horizontalMove) > Mathf.Epsilon)
         {
             _playerMover.Move(_horizontalMove);
@@ -27,6 +29,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetButton("Jump"))
         {
             _playerMover.Jump();
+            _playerAnimator.Jump();
         }
     }
 }
