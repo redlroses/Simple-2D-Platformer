@@ -42,19 +42,14 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GroundObserver.cs" />
-     <Compile Include="Assets\MetroidvaniaController\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
-     <Compile Include="Assets\MetroidvaniaController\Scripts\Player\Attack.cs" />
-     <Compile Include="Assets\MetroidvaniaController\Scripts\Player\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\IMovable.cs" />
-     <Compile Include="Assets\MetroidvaniaController\Scripts\Player\ThrowableWeapon.cs" />
-     <Compile Include="Assets\Scripts\PlayerInput.cs" />
-     <Compile Include="Assets\MetroidvaniaController\Scripts\Player\CharacterController2D.cs" />
-     <Compile Include="Assets\Scripts\PlayerMover.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\CoinCollector.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
-     <Compile Include="Assets\Scripts\CoinCollector.cs" />
+     <Compile Include="Assets\Scripts\IMovable.cs" />
+     <Compile Include="Assets\Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\PlayerMover.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
