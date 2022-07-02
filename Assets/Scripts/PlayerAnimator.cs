@@ -17,14 +17,8 @@ public class PlayerAnimator : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        
     }
 
-    private void SetFlipX(bool flipX)
-    {
-        _spriteRenderer.flipX = flipX;
-    }
-    
     public void Jump()
     {
         if (_groundObserver.IsGrounded)
@@ -35,5 +29,10 @@ public class PlayerAnimator : MonoBehaviour
     {
         SetFlipX(speed < 0f);
         _animator.SetFloat(_speed, Mathf.Abs(speed));
+    }
+
+    private void SetFlipX(bool flipX)
+    {
+        _spriteRenderer.flipX = flipX;
     }
 }

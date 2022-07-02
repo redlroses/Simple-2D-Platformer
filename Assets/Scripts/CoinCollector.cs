@@ -10,6 +10,5 @@ public class CoinCollector : MonoBehaviour
             return;
         
         _coinsCollected++;
-        Destroy(coin.gameObject);
     }
 }
